@@ -20,3 +20,6 @@ urls.txt
 
 # mac
 .DS_Store
+
+#解决热更新失败
+.temp

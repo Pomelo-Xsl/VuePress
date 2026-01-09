@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'xiesl.top' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -18,8 +18,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
-      description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      title: "Pomelo's blog",
+      description: '我愿用我三生的烟火,换你一世的迷离',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -30,82 +30,90 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
+        text: '技术笔记',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: 'AI',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              { text: '大模型部署流程（沐曦）', link: '/pages/8143cc480faf9a11/' },
             ],
           },
           {
-            text: '学习笔记',
+            text: '软件工程',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
+              { text: '《操作系统》', link: '/note/javascript/' },
+              { text: '《计算机网络》', link: '/note/js/' },
+              { text: '《Linux》', link: '/note/es6/' },
+              { text: '《工具与环境》', link: '/note/vue/' },
             ],
           },
         ],
       },
       {
-        text: '页面',
+        text: '工程实践',
         link: '/ui/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: '《小项目》', link: '/pages/8309a5b876fc95e3/' },
         ],
       },
       {
-        text: '技术',
+        text: '学习路线',
         link: '/technology/',
         items: [
-          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+          { text: '健身小白', link: '/pages/9a7ee40fc232253e/' },
+          { text: '理财入门', link: '/pages/4c778760be26d8b3/' },
+          { text: '自媒体浅尝', link: '/pages/117708e0af7f0bd9/' },
+          { text: '计算机知识体系的建立', link: '/pages/41f87d890d0a02af/' },
         ],
       },
       {
-        text: '更多',
+        text: '个人成长',
         link: '/more/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
+          { text: '《周报》', link: '/pages/f2a556/' },
+          { text: '《月报》', link: '/pages/aea6571b7a8bae86/' },
+          { text: '《年报》', link: '/pages/2d615df9a36a98ed/' },
         ],
       },
-      { text: '关于', link: '/about/' },
       {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
+        text: '职业发展',
+        link: '/fz/',
+        items: [
+          {
+            text: '恰点烂钱',
+            link: '/pages/beb6c0bd8a66cea6/',
+          },
+        ],
+      },
+       {
+        text: '其他',
+        link: '/node/',
+        items: [
+          {
+            text: '随笔记录',
+            link: '/pages/beb6c0bd8a66ca6/',
+          },
+          {
+            text: '收藏夹',
+            link: '/pages/beb6c0bd8a66ca6/',
+          },
+        ],
+      },
+      {
+        text: '关于',
+        link: '/about/',
+        items: [
+          {
+            text: '关于本站',
+            link: '/pages/beb6c0bd8a66ca6/',
+          },
+          {
+            text: '关于博主',
+            link: '/pages/beb6c0bd8a66ca6/',
+          },
+        ],
       },
       {
         text: '索引',
