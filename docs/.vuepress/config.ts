@@ -141,35 +141,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       link: 'https://github.com/Pomelo-Xsl', // 可选的
     },
 
-    // 博主信息 (显示在首页侧边栏)
-    // blogger: {
-    //   avatar: '/img/Pomelo.jpg',
-    //   name: 'Pomelo',
-    //   slogan: '02年程序员一枚+未知名博主',
-    // },
-
-    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
-    // social: {
-    //   // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
-    //   icons: [
-    //     {
-    //       iconClass: 'icon-youjian',
-    //       title: '发邮件',
-    //       link: 'mailto:xsl20020718@gmail.com',
-    //     },
-    //     {
-    //       iconClass: 'icon-github',
-    //       title: 'GitHub',
-    //       link: 'https://github.com/Pomelo-Xsl',
-    //     },
-    //     {
-    //       iconClass: 'icon-erji',
-    //       title: '听音乐',
-    //       link: 'https://music.163.com/#/playlist?id=755597173',
-    //     },
-    //   ],
-    // },
-
     // 页脚信息
     footer: {
       createYear: 2026, // 博客创建年份
@@ -201,14 +172,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    // [
-    //   'script',
-    //   {
-    //     'data-ad-client': 'ca-pub-7828333725993554',
-    //     async: 'async',
-    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-    //   },
-    // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
   ],
 
 
