@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/logo.png
 heroText: Pomeol's知识库
-tagline: 美食爱好者
+tagline: 把“感觉”变成“数字”，把“经验”变成“规则”，把“判断”变成“可执行的模型”
 bannerBg: /img/bj.jpg
 
 features:
